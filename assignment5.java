@@ -4,6 +4,7 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class assignment5 {
+	//function side
 	//qst1)write a method that multiplies 2 numbers and returns the answer
 /*public static int mul(int a,int b) {
 	int pro=a*b;
