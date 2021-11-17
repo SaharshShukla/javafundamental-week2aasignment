@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.Scanner;
 
 public class assignment5 {
-	//function side
 	//qst1)write a method that multiplies 2 numbers and returns the answer
 /*public static int mul(int a,int b) {
 	int pro=a*b;
@@ -29,50 +28,21 @@ public class assignment5 {
 	
 	//qst3)write 3 different mathods each takes different
 	 // number of int arguments and return its max value
-	/*public  static  void method1(int a,int b) {
-		if(a>b) {
-			System.out.println(a+" is greater  "+b);
+	public  static  int method1(int a,int b) {
+		int rst=Math.max(a, b);
+		return(rst);
+		
+	}
+	public  static  int method1(int a,int b,int c) {
+		int rst=Math.max(Math.max(a, b),c);
+		return(rst);
 		}
-		else if(a==b) {
-			System.out.println(a+" is equal to "+b);
-		}
-		else if(b>a) {
-			System.out.println(b+" is greater  "+a);
+	public  static  int method1(int a,int b,int c,int d) {
+		int rst=Math.max(Math.max(Math.max(a, b),c),d);
+		return (rst);
+		
 		}
 		
-	}*/
-	/*public  static  void method1(int a,int b,int c) {
-		if((a>b)&(a>c)) {
-			System.out.println(a+" is greater "+b+" and "+c);
-		}
-		else if((a==b)&(a==c)) {
-			System.out.println(a+" is equal to "+b+" and "+c);
-		}
-		else if((b>a)&(b>c)) {
-			System.out.println(b+" is greater and  "+b+" and "+c);
-		}
-		else if((c>a)&(c>b)) {
-			System.out.println(c+" is greater and  "+a+" and "+b);
-		}
-		}*/
-	/*public  static  void method1(int a,int b,int c,int d) {
-		if((a>b)&(a>c)&(a>d)) {
-			System.out.println(a+" is greater "+b+" and "+c+" and "+d);
-		}
-		else if((a==b)&(a==c)&(a==d)) {
-			System.out.println(a+" is equal to "+b+" and "+c+" and "+d);
-		}
-		else if((b>a)&(b>c)&(b>d)) {
-			System.out.println(b+" is greater and  "+b+" and "+c+" and "+d);
-		}
-		else if((c>a)&(c>b)&(c>d)) {
-			System.out.println(c+" is greater and  "+a+" and "+b+" and "+d);
-		}
-		else if((d>a)&(d>b)&(d>c)) {
-			System.out.println(d+" is greater and  "+a+" and "+b+" and "+c);
-		}
-		
-		}*/
 	
 	//qst4)write a method to return sum of array"*/
 	/*public static int arraySum(int[]a,int[] b){
@@ -133,7 +103,7 @@ public class assignment5 {
 		 
 		//qst3)write 3 different mathods each takes different
 		 // number of int arguments and return its max value
-		/* try{
+		 try{
 			 //it will not return max value it will compare and will display in methord
 			 System.out.println("Enter number1: ");
 		     int n1=sc.nextInt();
@@ -143,15 +113,17 @@ public class assignment5 {
 		     int n3=sc.nextInt();
 		     System.out.println("Enter number4: ");
 		     int n4=sc.nextInt();
-method1(n1, n2);
-method1(n1, n2, n3);//methord overloading
-method1(n1, n2, n3, n4);//methord overloading
-		 
+int dis1=method1(n1, n2);
+int dis2=method1(n1, n2, n3);//methord overloading
+int dis3=method1(n1, n2, n3, n4);//methord overloading
+System.out.println("Maximum of "+n1+" and "+n2+" is "+dis1);
+System.out.println("Maximum of "+n1+" , "+n2+" and "+n3+" is "+dis2);		
+System.out.println("Maximum of "+n1+" , "+n2+" , "+n3+" and "+" is "+dis3);		
 		 }
 		 catch (Exception e) {
 			// TODO: handle exception
 			 System.out.println("Invalid input: "+e);
-		}*/
+		}
 		 
 		//qst4)write a method to return sum of array"*/
 		/* try {
