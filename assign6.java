@@ -3,6 +3,7 @@ package class_practice;
 import java.util.Scanner;
 
 public class assign6 {
+	//functionside
 	//qst1)"WAP to caluclate no. of digits in a number entered by user.
 	/*public static void noOfDigit(int n) {
 		int digit=0;
