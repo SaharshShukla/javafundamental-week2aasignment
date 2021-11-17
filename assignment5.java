@@ -12,15 +12,15 @@ public class assignment5 {
 	
 	//qst2)write 3 different mathods each takes int, float, long 
 	//numbers as input and returns its multiplication value
-	/*public static int integerVariable(int a,int b) {//function for multipilcation of two int no
+	/*public static int variable(int a,int b) {//function for multipilcation of two int no
 		int pro=a*b;
 		return(pro);
 	}*/
-	/*public static float floatVariable(float a1,float b1) {//function for multipilcation of two float no
+	/*public static float variable(float a1,float b1) {//function for multipilcation of two float no
 		float pro=a1*b1;
 		return(pro);
 	}*/
-	/*public static long longVariable(long a2,long b2) {//function for multipilcation of two long no
+	/*public static long variable(long a2,long b2) {//function for multipilcation of two long no
 		long pro=a2*b2;
 		return (pro);
 	}*/
@@ -78,21 +78,21 @@ public class assignment5 {
 		 int num1=sc.nextInt();
 		 System.out.print("Enter second integer: ");
 		 int num2=sc.nextInt();
-		 int disint=integerVariable(num1, num2);
+		 int disint=variable(num1, num2);
 		 
 		 
 		 System.out.print("Enter first long: ");
 		 long n1=sc.nextLong();
 		 System.out.print("Enter second long: ");
 		 long n2=sc.nextLong();
-		long dislong= longVariable(n1, n2);
+		long dislong= variable(n1, n2);
 		 
 		 
 		 System.out.print("Enter first float: ");
 		 float n_1=sc.nextFloat();
 		 System.out.print("Enter second float: ");
 		 float n_2=sc.nextFloat();
-		 float disfloat=floatVariable(n_1, n_2);
+		 float disfloat=variable(n_1, n_2);
 		 
 		 System.out.println("Multiplication of "+num1+" and "+num2+" is "+disint);
 		 System.out.println("Multiplication of "+n1+" and "+n2+" is "+dislong);
