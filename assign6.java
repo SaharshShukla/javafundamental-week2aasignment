@@ -8,7 +8,7 @@ public class assign6 {
 	/*public static void noOfDigit(int n) {
 		int digit=0;
 		while(n!=0) {
-			n=n/10;
+			n=n/10;//dividing number by 10 to reduce it
 			digit++;//variable do counting of digit
 			}
 		System.out.println("Number of digit is "+digit);
