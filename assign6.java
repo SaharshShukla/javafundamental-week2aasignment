@@ -9,7 +9,7 @@ public class assign6 {
 		int digit=0;
 		while(n!=0) {
 			n=n/10;
-			digit++;
+			digit++;//variable do counting of digit
 			}
 		System.out.println("Number of digit is "+digit);
 		}*/
