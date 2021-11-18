@@ -44,14 +44,7 @@ public class assignment5 {
 		}
 		
 	
-	//qst4)write a method to return sum of array"*/
-	/*public static int arraySum(int[]a,int[] b){
-		int[] sum=new int[5];
-		int i;
-		for(i=0;i<4;i++) {
-			 sum[i]=a[i]+b[i];}
-		return(sum[i]);
-	}*/
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -125,19 +118,7 @@ System.out.println("Maximum of "+n1+" , "+n2+" , "+n3+" and "+" is "+dis3);
 			 System.out.println("Invalid input: "+e);
 		}
 		 
-		//qst4)write a method to return sum of array"*/
-		/* try {
-			 int[]a= {1,2,3,4,5};
-			 int[]b= {6,7,8,9,20};
-			 int[]dis=new int[5];
-			 
-			 for(int j=0;j<4;j++)
-			{dis[j]= arraySum(a, b);
-			System.out.println("Sum of array "+a+" and "+b+" is "+dis[j]);}
-		} catch (Exception e) {
-			// TODO: handle exception
-			System.out.println(e);
-		}*/
+		
 	}
 
 }
