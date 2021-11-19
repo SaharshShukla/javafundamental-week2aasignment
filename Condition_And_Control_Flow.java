@@ -53,7 +53,7 @@ public class Condition_And_Control_Flow {
 			System.out.println("Invalid");
 		}
 	
-	} */
+	} /*
 	
 	
 	/*	3.write program to print different courses needs to be studied by students 
@@ -72,31 +72,57 @@ public class Condition_And_Control_Flow {
                           ECE->Embedded System, Image Processing
                           MECH->Production Technology, Thermal Engineering"*/
 	public static void course(String branch,int yr) {
-		if(yr==1) {
-			System.out.println("courses user need to study  are English, Maths, Science");
-		}else if((branch=="cse")&(yr==2)) {
+		switch(branch) {
+		
+		//cse branch
+		case "cse":
+		if(yr==1) {//year 1
+				System.out.println("courses user need to study  are English, Maths, Science");
+		}else if(yr==2) {//year 2
 			System.out.println("courses user need to study  are Operating System, Java, Data Structure");
-		}else if((branch=="ece")&(yr==2)) {
-			System.out.println("courses user need to study  are Micro processors, Logic switching theory");
-		}else if((branch=="mec")&(yr==2)){
-			System.out.println("courses user need to study  are Drawing, Manufacturing Machines");
-		}if(branch=="cse"&yr==3) {
+		}else if(yr==3) {//year 3
 			System.out.println("courses user need to study  are Computer Organization, MultiMedia");
-		}else if(branch=="ece"&yr==3) {
-			System.out.println("courses user need to study  are  Fundamentals of Logic Design, Microelectronics");
-		}else if(branch=="mec"&yr==3) {
-			System.out.println("courses user need to study  are Internal Combustion Engines, Mechanical Vibration");
-		}else if(branch=="cse"&yr==4) {
+		}else if(yr==4) {//year 4
 			System.out.println("courses user need to study  are Data Communication and Networks, MultiMedia");
-		}else if(branch=="ece"&yr==4) {
-			System.out.println("courses user need to study  are  Embedded System, Image Processing");
-		}else if(branch=="mec"&yr==4) {
-			System.out.println("courses user need to study  are Production Technology, Thermal Engineering");
-		}else {
-			System.out.println("Invalid input");
+		}
+		break;
+		
+		//ece branch
+		case "ece":
+			if(yr==1) {//year 1
+				System.out.println("courses user need to study  are English, Maths, Science");
+			}else if(yr==2) {//year 2
+				System.out.println("courses user need to study  are Micro processors, Logic switching theory");
+			}else if(yr==3) {//year 3
+				System.out.println("courses user need to study  are  Fundamentals of Logic Design, Microelectronics");
+			}else if(yr==4) {//year 4
+				System.out.println("courses user need to study  are  Embedded System, Image Processing");
+			}
+			break;
+			
+			//mech branch
+		case "mech":
+			if(yr==1) {//year 1
+				System.out.println("courses user need to study  are English, Maths, Science");
+			}else if(yr==2){//year 2
+				System.out.println("courses user need to study  are Drawing, Manufacturing Machines");
+			}else if(yr==3) {//year 3
+				System.out.println("courses user need to study  are Internal Combustion Engines, Mechanical Vibration");
+			}else if(yr==4) {//year 4
+				System.out.println("courses user need to study  are Production Technology, Thermal Engineering");
+			}
+			break;
+			
+			default:
+				System.out.println("Invalid input");
+				break;
+			
 		}
 		
-	}
+		}
+		
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//17nov
@@ -124,7 +150,7 @@ public class Condition_And_Control_Flow {
 		     - 90 - 100 -> A+ grade
 		     - None of above -> Invalid*/
 		 
-	/*	 try{
+	/* try{
 		System.out.println("Enter your marks: ");
 		 int marks=sc.nextInt();
 		 grade(marks);}
@@ -146,7 +172,7 @@ public class Condition_And_Control_Flow {
 		                          ECE->Embedded System, Image Processing
 		                          MECH->Production Technology, Thermal Engineering"*/
 		 try {
-			 System.out.print("Enter branch cse,ece and mec: ");
+			 System.out.print("Enter branch cse,ece and mech: ");
 			 String br=sc.nextLine();
 			 System.out.print("Enter year: ");
 			 int yr=sc.nextInt();
